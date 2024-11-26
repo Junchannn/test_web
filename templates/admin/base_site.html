@@ -1,0 +1,18 @@
+{% extends "admin/base.html" %}
+
+{% load static %} <!-- Ensures static files can be resolved -->
+
+{% block extrahead %}
+{{ block.super }}
+<link rel="stylesheet" type="text/css" href="{% static 'admin/css/custom.css' %}">
+{% endblock %}
+
+{% block title %}My Custom Admin{% endblock %}
+
+{% block branding %}
+<h1 id="site-name"><a href="{% url 'admin:index' %}">My Custom Admin</a></h1>
+{% endblock %}
+
+{% block nav-global %}
+<li><a href="{% url 'custom_admin_view' %}">My Custom View</a></li>
+{% endblock %}

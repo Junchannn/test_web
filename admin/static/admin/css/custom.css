@@ -1,0 +1,17 @@
+/* Custom CSS for the Django admin */
+body {
+    background-color: #f424f9; /* Change background color */
+}
+
+.navbar {
+    background-color: #0040; /* Change navbar color */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #ffffff !important; /* Customize logo/brand text */
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff !important; /* Change link color in navbar */
+}
